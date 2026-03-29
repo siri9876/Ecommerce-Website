@@ -10,7 +10,6 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-
   const suggestions = [
     "mobiles",
     "laptops",
@@ -23,7 +22,6 @@ function Nav() {
     item.toLowerCase().includes(search.toLowerCase())
   );
 
-  
   const handleSearch = (valueParam) => {
     const value = (valueParam || search).toLowerCase().trim();
 
@@ -39,21 +37,65 @@ function Nav() {
 
   return (
     <>
-      <div className="flex items-center justify-between p-3 bg-blue-950 text-white">
+      {/* TOP NAV */}
+      <div className="flex flex-wrap items-center justify-between gap-3 p-3 bg-blue-950 text-white">
 
-       
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "✖" : "☰"}
-        </button>
+        {/* LEFT */}
+        <div className="flex items-center gap-3">
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? "✖" : "☰"}
+          </button>
 
-      
-        <h1 className="text-2xl font-bold">ShopEase</h1>
+          <h1 className="text-xl sm:text-2xl font-bold cursor-pointer">
+            ShopEase
+          </h1>
+        </div>
 
-       
-        <div className="hidden md:flex items-center gap-6 ml-auto">
+        {/* SEARCH BAR */}
+        <div className="w-full md:w-1/3 order-3 md:order-0 relative">
+          <div className="bg-white rounded flex overflow-hidden">
+            <input
+              className="text-black px-2 py-1 flex-1 outline-none text-sm sm:text-base"
+              placeholder="Search products..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSearch();
+              }}
+            />
+            <button
+              className="px-3 bg-blue-800 text-white text-sm"
+              onClick={() => handleSearch()}
+            >
+              Search
+            </button>
+          </div>
+
+          {/* Suggestions */}
+          {search && (
+            <div className="absolute w-full bg-white text-black shadow-lg rounded mt-1 z-50 max-h-40 overflow-y-auto">
+              {filteredSuggestions.length > 0 ? (
+                filteredSuggestions.map((item, index) => (
+                  <div
+                    key={index}
+                    className="p-2 hover:bg-gray-200 cursor-pointer text-sm"
+                    onClick={() => handleSearch(item)}
+                  >
+                    {item}
+                  </div>
+                ))
+              ) : (
+                <div className="p-2 text-gray-500 text-sm">No results</div>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* RIGHT MENU (Desktop) */}
+        <div className="hidden md:flex items-center gap-6 ml-auto text-sm lg:text-base">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/categories">Categories</NavLink>
 
@@ -69,72 +111,18 @@ function Nav() {
           <NavLink to="/login">Login</NavLink>
           <NavLink to="/signup">Sign up</NavLink>
         </div>
-
-        
-        <div className="relative w-40 sm:w-60 md:w-72 ml-3">
-          <div className="bg-white rounded flex">
-            <input
-              className="text-black px-2 flex-1 outline-none"
-              placeholder="Search..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") handleSearch();
-              }}
-            />
-            <button
-              className="px-3 bg-blue-800 text-white"
-              onClick={() => handleSearch()}
-            >
-              Search
-            </button>
-          </div>
-
-          
-          {search && (
-            <div className="absolute w-full bg-white text-black shadow-lg rounded mt-1 z-50">
-              {filteredSuggestions.length > 0 ? (
-                filteredSuggestions.map((item, index) => (
-                  <div
-                    key={index}
-                    className="p-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => handleSearch(item)}
-                  >
-                    {item}
-                  </div>
-                ))
-              ) : (
-                <div className="p-2 text-gray-500">No results</div>
-              )}
-            </div>
-          )}
-        </div>
       </div>
 
-      
+      {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-900 text-white flex flex-col p-4 space-y-4">
+        <div className="md:hidden bg-blue-900 text-white flex flex-col p-4 space-y-4 text-sm">
+          <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+          <NavLink to="/categories" onClick={() => setMenuOpen(false)}>Categories</NavLink>
 
-          <NavLink 
-            to="/" 
+          <NavLink
+            to="/cart"
             onClick={() => setMenuOpen(false)}
-            className="border-b pb-2"
-          >
-            Home
-          </NavLink>
-
-          <NavLink 
-            to="/categories" 
-            onClick={() => setMenuOpen(false)}
-            className="border-b pb-2"
-          >
-            Categories
-          </NavLink>
-
-          <NavLink 
-            to="/cart" 
-            onClick={() => setMenuOpen(false)}
-            className="border-b pb-2 flex justify-between items-center"
+            className="flex justify-between"
           >
             Cart
             {totalItems > 0 && (
@@ -144,25 +132,14 @@ function Nav() {
             )}
           </NavLink>
 
-          <NavLink 
-            to="/login" 
-            onClick={() => setMenuOpen(false)}
-            className="border-b pb-2"
-          >
-            Login
-          </NavLink>
-
-          <NavLink 
-            to="/signup" 
-            onClick={() => setMenuOpen(false)}
-          >
-            Sign up
-          </NavLink>
+          <NavLink to="/login" onClick={() => setMenuOpen(false)}>Login</NavLink>
+          <NavLink to="/signup" onClick={() => setMenuOpen(false)}>Sign up</NavLink>
         </div>
       )}
 
+      {/* CATEGORY BAR */}
       <div className="bg-blue-900 text-white overflow-x-auto">
-        <div className="flex justify-between px-4 overflow-x-auto">
+        <div className="flex gap-6 sm:gap-10 px-4 py-2 whitespace-nowrap text-sm sm:text-base">
           <NavLink to="/mobiles">Mobiles</NavLink>
           <NavLink to="/laptop">Laptops</NavLink>
           <NavLink to="/menswear">Mens Wear</NavLink>
