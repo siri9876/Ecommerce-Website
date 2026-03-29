@@ -21,7 +21,7 @@ function Carousel() {
         <SwiperSlide>
           <div className="relative">
             <img
-              src="/src/assets/car-1.jpg"
+              src="../assets/car-1.jpg"
               className="w-full h-80 object-cover rounded-lg"
             />
 
@@ -46,7 +46,7 @@ function Carousel() {
         <SwiperSlide>
           <div className="relative">
             <img
-              src="/src/assets/car-2.jpg"
+              src="../assets/car-2.jpg"
               className="w-full h-80 object-cover rounded-lg"
             />
 
@@ -70,7 +70,7 @@ function Carousel() {
         <SwiperSlide>
           <div className="relative">
             <img
-              src="/src/assets/car-3.jpg"
+              src="../assets/car-3.jpg"
               className="w-full h-80 object-cover rounded-lg"
             />
 

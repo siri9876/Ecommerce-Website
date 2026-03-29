@@ -22,7 +22,7 @@ function Home() {
        
         <div className="shadow-xl w-full rounded">
           <img
-            src="./src/assets/head.jpg"
+            src="../assets/head.jpg"
             className="w-full h-48 object-cover rounded"
           />
           <p className="text-blue-800 text-center mt-2">
@@ -41,7 +41,7 @@ function Home() {
         
         <div className="shadow-xl w-full rounded">
           <img
-            src="./src/assets/smart.jpg"
+            src="../assets/smart.jpg"
             className="w-full h-48 object-cover rounded"
           />
           <p className="text-blue-800 text-center mt-2">
@@ -60,7 +60,7 @@ function Home() {
         
         <div className="shadow-xl w-full rounded">
           <img
-            src="./src/assets/home.jpg"
+            src="../assets/home.jpg"
             className="w-full h-48 object-cover rounded"
           />
           <p className="text-blue-800 text-center mt-2">
@@ -79,7 +79,7 @@ function Home() {
        
         <div className="shadow-xl w-full rounded">
           <img
-            src="./src/assets/sports.jpg"
+             src="../assets/sports.jpg"
             className="w-full h-48 object-cover rounded"
           />
           <p className="text-blue-800 text-center mt-2">

@@ -9,35 +9,35 @@ const laptops = [
  {
     name: "Hp",
     price: "₹50000",
-    img:"./src/assets/hp.jpg"},
+    img:"../assets/hp.jpg"},
   {
     name: "Macbook",
     price: "₹100000",
-    img:"./src/assets/mac.jpg"},
+    img:"../assets/mac.jpg"},
   {
     name: "Dell",
     price: "₹80000",
-    img:"./src/assets/dell.jpg"},
+    img:"../assets/dell.jpg"},
   {
     name: "Lenovo",
     price: "₹20000",
-    img:"./src/assets/len.jpg"},
+    img:"../assets/len.jpg"},
  {
     name: "Asus",
     price: "₹150000",
-    img:"./src/assets/as.jpg"},
+    img:"../assets/as.jpg"},
   {
     name: "realme",
     price: "₹30000",
-    img:"./src/assets/rea.jpg"},
+    img:"../assets/rea.jpg"},
   {
     name: "Acer",
     price: "₹40000",
-    img:"./src/assets/acer.jpg"},
+    img:"../assets/acer.jpg"},
   {
     name: "Sony",
     price: "₹80000",
-    img:"./src/assets/sony.jpg"},
+    img:"../assets/sony.jpg"},
 ];
 
 function Laptops() {

@@ -9,35 +9,35 @@ const mobiles = [
  {
     name: "samsung",
     price: "₹30000",
-    img:"./src/assets/sam.jpg"},
+    img:"../assets/sam.jpg"},
   {
     name: "iphone",
     price: "₹60000",
-    img:"./src/assets/iphone.jpg"},
+    img:"../assets/iphone.jpg"},
   {
     name: "vivo",
     price: "₹35000",
-    img:"./src/assets/vivo.jpg"},
+    img:"../assets/vivo.jpg"},
   {
     name: "redme",
     price: "₹20000",
-    img:"./src/assets/redm.jpg"},
+    img:"../assets/redm.jpg"},
  {
     name: "moto",
     price: "₹6000",
-    img:"./src/assets/moto.jpg"},
+    img:"../assets/moto.jpg"},
   {
     name: "realme",
     price: "₹16000",
-    img:"./src/assets/real.jpg"},
+    img:"../assets/real.jpg"},
   {
     name: "oneplus",
     price: "₹25000",
-    img:"./src/assets/oneplus.jpg"},
+    img:"../assets/oneplus.jpg"},
   {
     name: "oppo",
     price: "₹18000",
-    img:"./src/assets/oppo.jpg"},
+    img:"../assets/oppo.jpg"},
 ];
 
 function Mobiles() {
