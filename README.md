@@ -1,4 +1,4 @@
-#  ShopEase - E-Commerce Web Application
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df9e28a9-df39-4984-87ce-f270d6d1a8db" />#  ShopEase - E-Commerce Web Application
 
 ShopEase is a responsive e-commerce web application built using **React.js** and **Tailwind CSS**.
 It allows users to browse products, search items, add them to cart, and simulate checkout.
@@ -7,7 +7,7 @@ It allows users to browse products, search items, add them to cart, and simulate
 
 ##  Live Demo
 
-👉 Add your deployed link here (Vercel / Netlify)
+https://ecommerce-website-ten-steel.vercel.app/
 
 
 
@@ -107,7 +107,10 @@ npm run dev
 
 ##  Screenshots
 
-(Add screenshots of your project here)
+<img width="1920" height="1080" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/5164f2e3-171a-4536-be53-2aa22d7a452d" />
+
+
+
 
 
 
