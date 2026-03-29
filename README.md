@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df9e28a9-df39-4984-87ce-f270d6d1a8db" />#  ShopEase - E-Commerce Web Application
+
 
 ShopEase is a responsive e-commerce web application built using **React.js** and **Tailwind CSS**.
 It allows users to browse products, search items, add them to cart, and simulate checkout.
@@ -108,6 +108,16 @@ npm run dev
 ##  Screenshots
 
 <img width="1920" height="1080" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/5164f2e3-171a-4536-be53-2aa22d7a452d" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/56493305-f629-4e95-a89d-ec92c39ba45a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fcfc371-0493-433e-8497-ac51d1fd6860" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e839d92a-244e-43bd-be4b-53f225a0adb2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cb7f734c-12a0-4bc9-af2b-d666db56ff34" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6244e7ac-70fc-43bf-9136-34961416bb4a" />
+
+
+
+
 
 
 
