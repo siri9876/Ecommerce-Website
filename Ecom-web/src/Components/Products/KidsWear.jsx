@@ -9,35 +9,35 @@ const kids = [
  {
     name: "Sherwani",
     price: "₹1000",
-    img:"../assets/k1.jpg"},
+    img:"/k1.jpg"},
   {
     name: "frock",
     price: "₹2000",
-    img:"../assets/k2.jpg"},
+    img:"/k2.jpg"},
   {
     name: "CropTop",
     price: "₹2500",
-    img:"../assets/k3.jpg"},
+    img:"/k3.jpg"},
   {
     name: "White-Shirt",
     price: "₹800",
-    img:"../assets/k4.jpg"},
+    img:"/k4.jpg"},
  {
     name: "Westren Frock",
     price: "₹500",
-    img:"../assets/k5.jpg"},
+    img:"/k5.jpg"},
   {
     name: "Sharara",
     price: "₹3000",
-    img:"../assets/k6.jpg"},
+    img:"/k6.jpg"},
   {
     name: "Lehanga",
     price: "₹1000",
-    img:"../assets/k7.jpg"},
+    img:"/k7.jpg"},
   {
     name: "Hoodie",
     price: "₹3000",
-    img:"../assets/k8.jpg"},
+    img:"/k8.jpg"},
 ];
 
 function WomensWear() {

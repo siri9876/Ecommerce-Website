@@ -9,35 +9,35 @@ const mens = [
  {
     name: "Leather jacket",
     price: "₹500",
-    img:"../assets/m1.jpg"},
+    img:"/m1.jpg"},
   {
     name: "Suit",
     price: "₹1000",
-    img:"../assets/m2.jpg"},
+    img:"/m2.jpg"},
   {
     name: "jacket",
     price: "₹800",
-    img:"../assets/m3.jpg"},
+    img:"/m3.jpg"},
   {
     name: "White Shirt",
     price: "₹800",
-    img:"../assets/m4.jpg"},
+    img:"/m4.jpg"},
  {
     name: "Mens Fashion",
     price: "₹1500",
-    img:"../assets/m5.jpg"},
+    img:"/m5.jpg"},
   {
     name: "Men Casual Wear",
     price: "₹3000",
-    img:"../assets/m6.jpg"},
+    img:"/m6.jpg"},
   {
     name: "Blue Jacket",
     price: "₹1000",
-    img:"../assets/m7.jpg"},
+    img:"/m7.jpg"},
   {
     name: "Black Suit",
     price: "₹3000",
-    img:"../assets/m8.jpg"},
+    img:"/m8.jpg"},
 ];
 
 function MensWear() {

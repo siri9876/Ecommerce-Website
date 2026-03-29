@@ -9,35 +9,35 @@ const womens = [
  {
     name: "Anarkali",
     price: "₹500",
-    img:"../assets/w1.jpg"},
+    img:"/w1.jpg"},
   {
     name: "Weastren Wear",
     price: "₹1000",
-    img:"../assets/w2.jpg"},
+    img:"/w2.jpg"},
   {
     name: "Chudidhar",
     price: "₹800",
-    img:"../assets/w3.jpg"},
+    img:"/w3.jpg"},
   {
     name: "Saree",
     price: "₹800",
-    img:"../assets/w4.jpg"},
+    img:"/w4.jpg"},
  {
     name: "Panjabi Dress",
     price: "₹1500",
-    img:"../assets/w5.jpg"},
+    img:"/w5.jpg"},
   {
     name: "Westren Wear",
     price: "₹3000",
-    img:"../assets/w6.jpg"},
+    img:"/w6.jpg"},
   {
     name: "Office Wear",
     price: "₹1000",
-    img:"../assets/w7.jpg"},
+    img:"/w7.jpg"},
   {
     name: "Frock",
     price: "₹3000",
-    img:"../assets/w8.jpg"},
+    img:"/w8.jpg"},
 ];
 
 function WomensWear() {
