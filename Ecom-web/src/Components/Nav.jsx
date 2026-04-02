@@ -37,10 +37,10 @@ function Nav() {
 
   return (
     <>
-      {/* TOP NAV */}
+     
       <div className="flex flex-wrap items-center justify-between gap-3 p-3 bg-blue-950 text-white">
 
-        {/* LEFT */}
+       
         <div className="flex items-center gap-3">
           <button
             className="md:hidden text-2xl"
@@ -54,7 +54,7 @@ function Nav() {
           </h1>
         </div>
 
-        {/* SEARCH BAR */}
+        
         <div className="w-full md:w-1/3 order-3 md:order-0 relative">
           <div className="bg-white rounded flex overflow-hidden">
             <input
@@ -74,7 +74,7 @@ function Nav() {
             </button>
           </div>
 
-          {/* Suggestions */}
+          
           {search && (
             <div className="absolute w-full bg-white text-black shadow-lg rounded mt-1 z-50 max-h-40 overflow-y-auto">
               {filteredSuggestions.length > 0 ? (
@@ -94,7 +94,7 @@ function Nav() {
           )}
         </div>
 
-        {/* RIGHT MENU (Desktop) */}
+        
         <div className="hidden md:flex items-center gap-6 ml-auto text-sm lg:text-base">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/categories">Categories</NavLink>
@@ -113,7 +113,7 @@ function Nav() {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+    
       {menuOpen && (
         <div className="md:hidden bg-blue-900 text-white flex flex-col p-4 space-y-4 text-sm">
           <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
@@ -137,7 +137,7 @@ function Nav() {
         </div>
       )}
 
-      {/* CATEGORY BAR */}
+     
       <div className="bg-blue-900 text-white overflow-x-auto">
         <div className="flex gap-6 sm:gap-10 px-4 py-2 whitespace-nowrap text-sm sm:text-base">
           <NavLink to="/mobiles">Mobiles</NavLink>

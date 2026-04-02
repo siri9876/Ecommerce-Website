@@ -1,7 +1,7 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "../Nav";
+import Footer from "../Footer";
 import { useContext, useState } from "react";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 import { useNavigate } from "react-router-dom";
 
 function Payment() {

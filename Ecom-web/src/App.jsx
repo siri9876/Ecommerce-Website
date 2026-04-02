@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
+import Home from "./Components/Pages/Home";
 import Categories from "./Components/Categories/Categories";
-import Cart from "./Components/Cart";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
-import Payment from "./Components/Payment";
+import Cart from "./Components/Pages/Cart";
+import Login from "./Components/Pages/Login";
+import Signup from "./Components/Pages/Signup";
+import Payment from "./Components/Pages/Payment";
 import Mobiles from "./Components/Products/Mobiles";
 import Laptops from "./Components/Products/Laptops"
 import MensWear from "./Components/Products/MensWear";

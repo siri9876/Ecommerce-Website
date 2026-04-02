@@ -1,5 +1,5 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "../Nav";
+import Footer from "../Footer";
 import { useNavigate } from "react-router-dom"; // ✅ ADD
 
 function Signup() {
